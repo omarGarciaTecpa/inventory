@@ -5,17 +5,25 @@ using System.Text;
 
 namespace Entities
 {
-    class InOutEntity
+    public class InOutEntity
     {
         [Key]
         [StringLength(50)]
         public string InOutId { get; set; }
 
+        [Required]
         public DateTime InOutDate { get; set; }
 
-        public int InOutQuantity { get; set; }
+        [Required]
+        public int Quantity { get; set; }
 
-        public bool InOutIsInput { get; set; }
+        [Required]
+        public bool IsInput { get; set; }
+         
+        //Relacion con Storage
+        public string StorageId { get; set; }
+
+        public StorageEntity Storage { get; set; }
 
 
     }

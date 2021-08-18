@@ -14,5 +14,9 @@ namespace Entities
        [Required]
        [StringLength(100)]
         public string CategoryName { get; set; }
+
+        public ICollection<ProductEntity> Products { get; set; }
+
+
     }
 }
