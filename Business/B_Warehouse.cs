@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Business
 {
-    class B_Warehouse
+    public class B_Warehouse
     {
     }
 }

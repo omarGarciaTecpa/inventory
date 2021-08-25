@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Business
 {
-    class B_InputOutput
+    public class B_InputOutput
     {
     }
 }
