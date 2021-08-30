@@ -7,7 +7,7 @@ using System.Text;
 
 namespace DataAccess
 {
-    class InventoryContext : DbContext
+    public class InventoryContext : DbContext
     {
         public DbSet<ProductEntity> Products { get; set; }
 
